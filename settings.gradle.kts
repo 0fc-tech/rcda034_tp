@@ -22,3 +22,6 @@ dependencyResolutionManagement {
 rootProject.name = "TP"
 include(":app")
 include(":gestionfilmserie")
+include(":mod2correctiongestionbibliotheque")
+include(":mod2gestionbiblio")
+include(":enishop")

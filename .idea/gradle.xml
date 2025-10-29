@@ -11,7 +11,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/enishop" />
             <option value="$PROJECT_DIR$/gestionfilmserie" />
+            <option value="$PROJECT_DIR$/mod2correctiongestionbibliotheque" />
+            <option value="$PROJECT_DIR$/mod2gestionbiblio" />
           </set>
         </option>
       </GradleProjectSettings>
