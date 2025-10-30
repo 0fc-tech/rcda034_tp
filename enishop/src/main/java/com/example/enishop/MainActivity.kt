@@ -12,11 +12,10 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import com.example.enishop.ui.theme.TPTheme
-import com.example.enishop.ui.widgets.ArticleDetailScreen
+import com.example.enishop.ui.page.ArticleDetailScreen
+import com.example.enishop.ui.page.ArticleListScreen
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
@@ -41,7 +40,8 @@ class MainActivity : ComponentActivity() {
                         )
                     }
                 ) { innerPadding ->
-                    ArticleDetailScreen(Modifier.padding(innerPadding))
+                    ArticleListScreen(Modifier.padding(innerPadding))
+                   // ArticleDetailScreen(Modifier.padding(innerPadding))
                 }
             }
         }

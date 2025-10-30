@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.enishop"
+    namespace = "com.example.mod4lancerde"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.example.enishop"
+        applicationId = "com.example.mod4lancerde"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -42,9 +42,6 @@ android {
 }
 
 dependencies {
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.4")
-    implementation("io.coil-kt.coil3:coil-compose:3.1.0")
-    implementation("io.coil-kt.coil3:coil-network-okhttp:3.1.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
