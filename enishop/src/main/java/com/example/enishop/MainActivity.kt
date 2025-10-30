@@ -16,7 +16,9 @@ import androidx.compose.ui.Modifier
 import com.example.enishop.ui.theme.TPTheme
 import com.example.enishop.ui.page.ArticleDetailScreen
 import com.example.enishop.ui.page.ArticleListScreen
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
