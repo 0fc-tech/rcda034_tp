@@ -1,7 +1,6 @@
-package com.example.enishop
+package com.example.enishop.di
 
 import com.example.enishop.data.repository.ArticleRepository
-import com.example.enishop.ui.widgets.ArticleItem
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

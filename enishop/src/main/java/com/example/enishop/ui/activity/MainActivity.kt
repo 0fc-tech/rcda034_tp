@@ -1,4 +1,4 @@
-package com.example.enishop
+package com.example.enishop.ui.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -13,9 +13,8 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.ui.Modifier
-import com.example.enishop.ui.theme.TPTheme
-import com.example.enishop.ui.page.ArticleDetailScreen
 import com.example.enishop.ui.page.ArticleListScreen
+import com.example.enishop.ui.theme.TPTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -27,7 +26,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             TPTheme {
                 Scaffold(
-                    modifier = Modifier.fillMaxSize(),
+                    modifier = Modifier.Companion.fillMaxSize(),
                     topBar = {
                         TopAppBar(
 
@@ -42,8 +41,8 @@ class MainActivity : ComponentActivity() {
                         )
                     }
                 ) { innerPadding ->
-                    ArticleListScreen(Modifier.padding(innerPadding))
-                   // ArticleDetailScreen(Modifier.padding(innerPadding))
+                    ArticleListScreen(Modifier.Companion.padding(innerPadding))
+                    // ArticleDetailScreen(Modifier.padding(innerPadding))
                 }
             }
         }
